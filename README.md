@@ -19,22 +19,22 @@ The fact fire details table is where analysts will run their queries against. I'
 
 - select the city with the higher number of fire incidents (I assume that incident_id is unique and is not duplicated)
 
-select count (incident_id) as inc_count,
-        city
-from fact_fires_details
-group by city
-order by inc_count desc
-limit 1
+select count (incident_id) as inc_count,<br/>
+        city<br/>
+from fact_fires_details<br/>
+group by city<br/>
+order by inc_count desc<br/>
+limit 1<br/>
 
 - select the battalion most demanded in 2019
 
-select count (battlion_id) as bat_count,
-        battlion_id
-from fact_fires_details
-where year = '2019'
-group by battlion_id
-order by bat_count desc
-limit 1
+select count (battlion_id) as bat_count,<br/>
+        battlion_id<br/>
+from fact_fires_details<br/>
+where year = '2019'<br/>
+group by battlion_id<br/>
+order by bat_count desc<br/>
+limit 1<br/>
 
 - select the year having the higher numer of fire incidents intentionally caused 
 
