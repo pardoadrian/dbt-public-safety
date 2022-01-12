@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+    - name: san_francisco_gov
+      database: db-name
+      schema: schema-name
+      description: raw data from source
+      tables:
+        - name: src_fire_incidents
+          columns:
+            - name: Incident Number
+              description: primary key for fire incidents
+              tests:
+                - unique
+                - not_null
