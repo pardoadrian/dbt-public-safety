@@ -38,13 +38,13 @@ limit 1
 
 - select the year having the higher numer of fire incidents intentionally caused 
 
-select count (incident_id) as inc_count,
-        year
-from fact_fires_details
-where ignition_cause = '1 - Intentional'
-group by year
-order by inc_count desc
-limit 1
+select count (incident_id) as inc_count,<br/>
+        year<br/>
+from fact_fires_details<br/>
+where ignition_cause = '1 - Intentional'<br/>
+group by year<br/>
+order by inc_count desc<br/>
+limit 1<br/>
 
 
 
